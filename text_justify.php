@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         <?php
 $text_to_justify=<<<END_TEXT
-But think not that this famous town has
+But think not that this famous town has 
 only harpooneers, cannibals, and
 bumpkins to show her visitors. Not at
 all. Still New Bedford is a queer place.
@@ -28,7 +28,7 @@ END_TEXT;
         $text_to_justify= str_replace("\r\n", "\n", $text_to_justify);
         $lines_in_text= substr_count($text_to_justify, "\n");
         $justified_length=47;
-        $justified_text="_";
+        $justified_text="\n";
         for($i=0;$i<$lines_in_text;$i++)
         {
             $previous_line=$next_line;
